@@ -17,4 +17,4 @@ WORKDIR /app
 COPY --from=builder /app/target/devops-integration.jar ./devops-integration.jar
 
 # Specify the command to run the application
-ENTRYPOINT ["java","-jar","/devops-integration.jar"]
+ENTRYPOINT ["java","-jar","./devops-integration.jar"]
